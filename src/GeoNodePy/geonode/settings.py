@@ -167,13 +167,15 @@ LOGIN_REDIRECT_URL = "/"
 
 DEFAULT_LAYERS_OWNER='admin'
 
-# Where should newly created maps be focused?
-DEFAULT_MAP_CENTER = (-84.7, 12.8)
+# Where should newly created maps be focused? (Longitude,Latitude)
+DEFAULT_MAP_CENTER = (24,38.1) # Greece
+#DEFAULT_MAP_CENTER = (23.71,37.96) # Athens
 
 # How tightly zoomed should newly created maps be?
 # 0 = entire world;
 # maximum zoom is between 12 and 15 (for Google Maps, coverage varies by area)
-DEFAULT_MAP_ZOOM = 7
+DEFAULT_MAP_ZOOM = 7 # Greece
+#DEFAULT_MAP_ZOOM = 12 # Athens
 
 DEFAULT_LAYER_SOURCE = {
     "ptype":"gxp_wmscsource",
