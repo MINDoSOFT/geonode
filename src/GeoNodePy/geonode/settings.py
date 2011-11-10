@@ -214,7 +214,13 @@ MAP_BASELAYERS = [{
       },
       {"buffer":0}
     ]
-
+  },{
+    "source": {"ptype":"gx_googlesource",
+               "apiKey":GOOGLE_API_KEY}, # Replace this with yours
+    "group":"background",
+    "name":"SATELLITE",
+    "visibility": False,
+    "fixed": True,
 }]
 
 # NAVBAR expects a dict of dicts or a path to an ini file
