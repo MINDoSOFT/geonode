@@ -34,14 +34,14 @@ Ext.onReady(function() {
             actionTarget: "main.tbar",
             outputConfig: {width: 400, height: 300},
             infoActionTip: "Get Feature Info in text form",
-            toggleGroup: "FeatureInfoGroup"
+            toggleGroup: "toolGroup" // Defined in GeoExplorer/app/static/script/app/GeoExplorer.js
         },{
             ptype: "gxp_wmsgetfeatureinfo",
             format: "grid",
             actionTarget: "main.tbar",
             outputConfig: {width: 400, height: 300},
             infoActionTip: "Get Feature Info in array form",
-            toggleGroup: "FeatureInfoGroup"
+            toggleGroup: "toolGroup"
         }],
         proxy: "/proxy/?url=",
 
