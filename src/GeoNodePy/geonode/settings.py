@@ -198,6 +198,12 @@ MAP_BASELAYERS = [{
     "fixed": True,
     "group":"background"
   },{
+    "source": { "ptype":"gxp_osmsource"},
+    "name" : "osmarender",
+    "visibility": False,
+    "fixed": True,
+    "group":"background"
+  },{
     "source": {"ptype":"gx_olsource"},
     "type":"OpenLayers.Layer.WMS",
     "group":"background",
