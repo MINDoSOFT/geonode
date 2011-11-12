@@ -50,7 +50,12 @@ Ext.onReady(function() {
                 emptyText: "Search for a location ..."
             },
             toggleGroup: "toolGroup"
-        }],
+        },{
+            ptype: "gxp_measure",
+            controlOptions: {immediate: true},
+            actionTarget: "paneltbar",
+            toggleGroup: "toolGroup"
+        },],
         proxy: "/proxy/?url=",
 
         /* The URL to a REST map configuration service.  This service 
