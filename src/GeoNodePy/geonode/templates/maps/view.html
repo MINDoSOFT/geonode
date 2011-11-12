@@ -31,16 +31,24 @@ Ext.onReady(function() {
             ptype: "gxp_wmsgetfeatureinfo",
             // uncomment the line below if you want feature info in a grid
             format: "html",
-            actionTarget: "main.tbar",
+            actionTarget: "paneltbar",
             outputConfig: {width: 400, height: 300},
             infoActionTip: "Get Feature Info in text form",
             toggleGroup: "toolGroup" // Defined in GeoExplorer/app/static/script/app/GeoExplorer.js
         },{
             ptype: "gxp_wmsgetfeatureinfo",
             format: "grid",
-            actionTarget: "main.tbar",
+            actionTarget: "paneltbar",
             outputConfig: {width: 400, height: 300},
             infoActionTip: "Get Feature Info in array form",
+            toggleGroup: "toolGroup"
+        },{
+            ptype: "gxp_googlegeocoder",
+            actionTarget: {target: "paneltbar"},
+            outputTarget: "paneltbar",
+            outputConfig: {
+                emptyText: "Search for a location ..."
+            },
             toggleGroup: "toolGroup"
         }],
         proxy: "/proxy/?url=",
