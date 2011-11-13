@@ -191,13 +191,6 @@ MAP_BASELAYERS = [{
     "fixed": True,
     "group":"background"
   },{
-    "source": { "ptype":"gx_olsource"},
-    "type":"OpenLayers.Layer.OSM",
-    "args":["OpenStreetMap"],
-    "visibility": True,
-    "fixed": True,
-    "group":"background"
-  },{
     "source": { "ptype":"gxp_osmsource"},
     "name" : "osmarender",
     "visibility": False,
@@ -206,7 +199,7 @@ MAP_BASELAYERS = [{
   },{
     "source": { "ptype":"gxp_osmsource"},
     "name" : "mapnik",
-    "visibility": False,
+    "visibility": True,
     "fixed": True,
     "group":"background"
   },{
