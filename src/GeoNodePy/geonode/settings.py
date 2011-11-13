@@ -254,6 +254,18 @@ MAP_BASELAYERS = [{
     "name":"HYBRID",
     "visibility": False,
     "fixed": True,
+  },{
+    "source": {"ptype":"gxp_mapquestsource"},
+    "name" : "osm",
+    "visibility": False,
+    "fixed": True,
+    "group":"background"
+  },{
+    "source": {"ptype":"gxp_mapquestsource"},
+    "name" : "naip",
+    "visibility": False,
+    "fixed": True,
+    "group":"background"
   },]
 
 # NAVBAR expects a dict of dicts or a path to an ini file
