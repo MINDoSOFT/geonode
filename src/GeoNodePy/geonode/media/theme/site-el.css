@@ -1,0 +1,12 @@
+@import url("/media/theme/site.css"); 
+/* @import is not supported in old browsers */
+
+#logo {
+float: left;
+width: 480px;
+height: 50px;
+background: url(img/logo-bg-el.png) no-repeat;
+overflow: hidden;
+text-indent: -9999em;
+}
+
