@@ -259,6 +259,15 @@ MAP_BASELAYERS = [{
     "visibility": False,
     "fixed": True,
     "group":"background"
+  },{
+    "source": {"ptype":"gxp_wmscsource",
+               "url" : "http://geodata6.vm.grnet.gr:8020/" + 
+                       "tilecache/tilecache.cgi",
+               "title" : "Geodata.gov.gr"},
+    "name" : "geodata",
+    "visibility": False,
+    "fixed": True,
+    "group":"background"
   },]
 
 # NAVBAR expects a dict of dicts or a path to an ini file
