@@ -268,7 +268,24 @@ MAP_BASELAYERS = [{
     "visibility": False,
     "fixed": True,
     "group":"background"
-  },]
+  },{
+    "source": {"ptype":"gx_olsource"},
+    "type":"OpenLayers.Layer.WMS",
+    "group":"background",
+    "visibility": False,
+    "fixed": True,
+    "args":[
+      "Ktimatologio",
+      "http://gis.ktimanet.gr/wms/wmsopen/WmsServer.aspx",
+      {
+        "layers":["basic"],
+        "format":"image/png",
+        "tiled": True,
+      },
+      {"buffer":0}
+    ]
+  }]
+
 
 # NAVBAR expects a dict of dicts or a path to an ini file
 NAVBAR = \
